@@ -1,0 +1,26 @@
+Real Concept situation
+- Writing a tool that goes through many directories
+- Menghitung berapa banyak files yang ada pada tiap directories
+- Ada posibility dimana dalam folder terdapat subfolder lagi
+
+Translating into programming word
+    1. Base Case: directory paling ujung yg tidak memiliki subfolder lagi
+    only returning the amount of files inside the Base Case
+    2. Recursive Case: mencari semua subfolder dalam folder yang diberikan
+    returning the function untuk menghitung jumlah file dalam subfolder + menjelajahi subfolder di dalamnya lagi
+    hingga menemui Base Case
+
+Additional Recursion Sources
+A recursive function must include a recursive case and base case. The recursive case calls the function again,
+with a different value. The base case returns a value without calling the same function.
+
+A recursive function will usually have this structure:
+def recursive_function(parameters):
+    if base_case_condition(parameters):
+        return base_case_value
+    recursive_function(modified_parameters)
+
+
+For more information on recursion, check out these resources:
+    # Wikipedia Recursion page -> https://en.wikipedia.org/wiki/Recursion
+    # See what happens when you Search Google for Recursion -> https://www.google.com/search?q=recursion
