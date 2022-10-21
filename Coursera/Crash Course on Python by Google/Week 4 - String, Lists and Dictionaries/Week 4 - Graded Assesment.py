@@ -15,7 +15,7 @@ def format_address(address_string):
     for x in address:
         # Determine if the address part is the
         # house number or part of the street name
-        if x.isnumeric() == True:
+        if x.isnumeric():
             number += x
         # Does anything else need to be done
         # before returning the result?
