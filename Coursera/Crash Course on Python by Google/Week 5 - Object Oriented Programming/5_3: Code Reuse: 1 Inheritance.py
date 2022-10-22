@@ -43,7 +43,7 @@ class Animal:
 class Cat(Animal):  # assigning Cat from Animal class that having sound like below
     sound = "meeowww"
 print(Cat)  # <class '__main__.Cat'>
-#print(Cat.sound())  # TypeError: 'str' object is not callable, sound is not a method
+print(Cat.sound())  # TypeError: 'str' object is not callable, sound is not a method
 print(Cat.sound)  # meeowww
 
 "To make it works (calling the name and sound), we need to assign the class into a variable then calling it"
