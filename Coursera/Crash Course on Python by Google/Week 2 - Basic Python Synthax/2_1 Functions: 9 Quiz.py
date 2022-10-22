@@ -72,7 +72,7 @@ print(lucky_number("Cameron"))
 """Question 5
 What is the purpose of the def keyword?
     ( ) Used to define a new function
-    ( ) Used to define a return value
+    ( ) Used to define a return valu
     ( ) Used to define a new variable
     ( ) Used to define a new parameter
 """
