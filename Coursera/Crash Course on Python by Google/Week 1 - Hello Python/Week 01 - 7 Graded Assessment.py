@@ -74,6 +74,6 @@ sector_amount = disk_size / sector_size
 print(sector_amount)
 
 # Test pushing to different branch
-Target: Local[gold] > Py-Learn [gold]
+Target: Local[beta] > Py-Learn [gold]
 OS: MAC
 app: PyCharm
