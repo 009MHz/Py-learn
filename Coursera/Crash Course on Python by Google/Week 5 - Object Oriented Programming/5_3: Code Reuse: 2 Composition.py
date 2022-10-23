@@ -77,4 +77,4 @@ sweatpants = pants("Sweatpants")
 polo.add_item(polo.name, polo.material, 4)
 sweatpants.add_item(sweatpants.name, sweatpants.material, 6)
 current_stock = polo.Stock_by_Material("Cotton")
-print(current_stock)  # should returned 10, since polo & sweatpants using cotton material
+print(current_stock)  # should return 10, since polo & sweatpants using cotton material
