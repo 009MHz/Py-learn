@@ -1,7 +1,4 @@
-#Step 4
-
-import random
-
+# Todo 5: Adding the scenario for user attempts to guess the word
 stages = ['''
   +---+
   |   |
@@ -60,50 +57,49 @@ stages = ['''
 ''']
 
 end_of_game = False
-word_list = ["ardvark", "baboon", "camel"]
+lives = 6
+
+# Todo 1: Randomizing the hidden word
+import random
+word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
-#TODO-1: - Create a variable called 'lives' to keep track of the number of lives left. 
-#Set 'lives' to equal 6.
-lives = 6
-
-#Testing code
+# Testing code for debugging
 print(f'Pssst, the solution is {chosen_word}.')
 
-#Create blanks
+# Todo 2: Converting jumlah text menjadi stripes
 display = []
-for _ in range(word_length):
-    display += "_"
+for stripes in chosen_word:
+    display.append("_")
 
+# Todo 4: Looping the game
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
 
-    #Check guessed letter
-    for position in range(word_length):
-        letter = chosen_word[position]
+    # Todo 3: Check the guess vs randomed word
+    for x in range(word_length):
+        letter = chosen_word[x]
         # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
         if letter == guess:
-            display[position] = letter
+            display[x] = letter
     print(display)
 
-    #TODO-2: - If guess is not a letter in the chosen_word,
-    #Then reduce 'lives' by 1. 
-    #If lives goes down to 0 then the game should stop and it should print "You lose."
-    if guess not in chosen_word: #indent level code ini harus sejajar dengan line 83 agar tidak nge run berkali kali sejumlah huruf pada kata yang diambil
+    # Todo 5a: reducing the lives
+    if guess not in chosen_word:
+        '''indent level code ini harus sejajar dengan line 83 agar tidak nge run berkali kali sejumlah huruf 
+        pada kata yang diambil'''
         lives -= 1
-        #print(lives)
-        if lives == 0: #syarat untuk mengakhiri game
-            end_of_game = True #kondisi spesifik untuk mengakhiri looping
-            print (f'"Game Over"\nThe Correct Word is "{chosen_word}"')
+        print(f" You have {lives} lives remaining")
 
-    #Join all the elements in the list and turn it into a String.
-    print(f"{' '.join(display)}")
+        # Todo 5b: ending the game using second exit point
+        if lives == 0:  # syarat untuk mengakhiri game
+            end_of_game = True  # kondisi spesifik untuk mengakhiri looping
+            print(f'"Game Over"\nThe Correct Word is "{chosen_word}"')
 
-    #Check if user has got all letters.
     if "_" not in display:
-        end_of_game = True
-        print("You win.")
+        end_of_game = True  # exit condition pertama
+        print("You Win")
 
-    #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
+    # Todo 6: print out the stages that represent to user's attempt
     print(stages[lives])

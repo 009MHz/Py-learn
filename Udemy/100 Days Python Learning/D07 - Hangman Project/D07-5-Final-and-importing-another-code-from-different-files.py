@@ -1,72 +1,69 @@
-#Step 5
+# do 0: importing the values from another files and setup the condition
 import random
-
-#TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
-#Delete this line: word_list = ["ardvark", "baboon", "camel"]
 from hangman_words import word_list
-
-chosen_word = random.choice(word_list)
-word_length = len(chosen_word)
+from hangman_art import stages, logo
 
 end_of_game = False
 lives = 6
 
-#TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
-from hangman_art import logo #line59 juga akan meminta code dari file yang sama, untuk menyingkatnya bisa menggunakan cara ini:
-#from hangman_art import logo, stages
-print(logo)
+# do 1: Randomizing the hidden word
+chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
+print(f'Pssst, the solution is {chosen_word}.')  # revealing the words for debugging
 
-#Testing code
-print(f'Pssst, the solution is {chosen_word}.')
-
-#Create blanks
+# do 2: Converting the text length into a stripes
 display = []
-for _ in range(word_length):
-    display += "_"
+used_attempt = []
+for stripes in chosen_word:
+    display.append("_")
 
+print(logo)
+print("You have 6 chances to guess")
+# do 4: looping the prompt
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
 
-    #TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
-    if guess in display:
+    # Todo 7: Handling duplicate input from previous guess
+    # print(f"used attempts: {used_attempt}")
+    if guess in used_attempt or guess in display:
         print(f'You already guessed "{guess}" before, try another')
-    #Check guessed letter
-    for position in range(word_length):
-        letter = chosen_word[position]
-        #print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
+
+    # do 3: Check the guess vs random word
+    for x in range(word_length):
+        letter = chosen_word[x]
+        # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
         if letter == guess:
-            display[position] = letter
+            display[x] = letter
+    print(display)
 
-
-    #Check if user is wrong.
+    # do 5a: reducing the lives
     if guess not in chosen_word:
-        #TODO-5: - If the letter is not in the chosen_word, print out the letter and let them know it's not in the word.
+        '''indent level code ini harus sejajar dengan line 83 agar tidak nge run berkali kali sejumlah huruf 
+        pada kata yang diambil'''
+        used_attempt.append(guess)
         lives -= 1
-        print (f'"{guess}" is wrong letters, you lose 1 life')
-        if lives == 0:
-            end_of_game = True
-            print("You lose.")
+        print(f"You have {lives} attempts remaining")
 
-    #Join all the elements in the list and turn it into a String.
-    print(f"{' '.join(display)}")
+        # do 5b: ending the game using second exit point
+        if lives == 0:  # syarat untuk mengakhiri game
+            end_of_game = True  # kondisi spesifik untuk mengakhiri looping
+            print(f'"Game Over"\nThe Correct Word is "{chosen_word}"')
 
-    #Check if user has got all letters.
     if "_" not in display:
-        end_of_game = True
-        print("You win.")
+        end_of_game = True  # exit condition pertama
+        print("You Win")
 
-    #TODO-2: - Import the stages from hangman_art.py and make this error go away.
-    from hangman_art import stages
+    # Todo 6: print out the stages that represent to user's attempt
     print(stages[lives])
 
-#bonus part
-#untuk membersihkan previous log supaya tidak menumpuk seperti yang sudah-sudah:
-    #untuk replit: from replit import clear, kemudian tambahkan command "clear" pada line yang diperlukan supaya tampilan bisa mereset dari awal dan tidak menumpuk, i.e: setelah line 28
-    #untuk VS code MAC: 
-    # import os
-     
-    # def cls():
-    #     os.system('cls' if os.name=='nt' else 'clear')
-     
-    # # now, to clear the screen
-    # cls()
+# bonus part
+# untuk membersihkan previous log supaya tidak menumpuk seperti yang sudah-sudah:
+# untuk replit: from replit import clear, kemudian tambahkan command "clear" pada line yang diperlukan supaya tampilan bisa mereset dari awal dan tidak menumpuk, i.e: setelah line 28
+# untuk VS code MAC:
+# import os
+
+# def cls():
+#     os.system('cls' if os.name=='nt' else 'clear')
+
+# # now, to clear the screen
+# cls()
