@@ -38,9 +38,8 @@ while not stop:
     shift = int(input("Type the shift number:\n"))
     # Todo 3: Checking the output
     caesar(texting=text, shifting=shift, directioning=direction)
-    cls()
     restart = input('Type "Yes" if you want to run again, type "No" if you decide to stop?\n').lower()
-
+    cls()
     if restart == "no":
         stop = True  # key  untuk mengakhiri looping command input
         print("\nI'll see you next time")
