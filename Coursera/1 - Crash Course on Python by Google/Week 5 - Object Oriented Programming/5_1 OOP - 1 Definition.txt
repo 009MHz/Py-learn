@@ -1,0 +1,21 @@
+Object Oriented Programming: A way of thinking about implementing our code from real world concept into a syntax
+Example: How to you describe an apple to someone who's never seen it before
+    1. Apple is fruit
+    2. There are different kind of apples
+        a. Different color
+        b. Different flavor
+        c. Different name
+The OOP concept is quite similar with previous example, since we have to explain it 'what we want' in a syntax language
+since the computer (syntax language) can,t understand what apple is, and we need to explain it
+
+REAL DEFINITION:
+OOP is a flexible, powerful paradigm where classes represent and define concepts, 
+while objects are instances of classes"""
+
+Elements under the Class
+    # Attributes: characteristics associated to a type
+        on the Apple Class, the attributes are the color and flavor
+    # Methods: the functions associated to a type
+        any action that we will execute on the apple (e.g: slice, bite, throw, eat, etc)
+
+
