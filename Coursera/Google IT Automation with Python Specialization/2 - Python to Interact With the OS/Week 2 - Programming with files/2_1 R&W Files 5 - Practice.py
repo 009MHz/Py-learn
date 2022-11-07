@@ -89,4 +89,4 @@ with open("guests.txt","r") as guests:
             print("{} is not checked in".format(check))
 
 
-# We can see that Bob is checked in while Andrea is not.  Nice work!
+# We can see that Bob is checked in while Andrea is not. Nice work!
