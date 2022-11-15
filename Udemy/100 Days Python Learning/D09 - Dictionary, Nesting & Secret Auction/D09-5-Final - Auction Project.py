@@ -12,7 +12,7 @@ def bid_winner(bidding_process):
     for x in bidding_process:  # mencari value lelangnya dari argument yg diberikan
         if bidding_process[x] > max_bid:  # validasi current harga lelang vs harga tertinggi
             max_bid = bidding_process[x]  # substitute max bid menjadi harga max terbaru
-            winner = bidder.title()  # substitute previous bid winner (dict key) menjadi pemilik max bid terbaru
+            winner = x.title()  # substitute previous bid winner (dict key) menjadi pemilik max bid terbaru
     print(f'The auctions is winning by "{winner}" with ${max_bid}.')
 
 
