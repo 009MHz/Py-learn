@@ -1,4 +1,6 @@
-from replit import clear
+import os
+def cls():
+    os.system('cls' if os.name =='nt' else 'clear')
 # #HINT: You can call clear() to clear the output in the console.
 from art import logo
 print(logo)
@@ -14,7 +16,7 @@ while not max_bid:
     if next == "no":
         max_bid = True
     else:
-        clear()
+        cls()
         print(f'Last bid is ${price}')
 
 #highest bidder
