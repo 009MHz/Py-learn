@@ -3,4 +3,4 @@ Coursera/Google IT Automation with Python Specialization/Week 6 - Writing Script
 Coursera/Google IT Automation with Python Specialization/2 - Python to Interact With the OS/Week 2 - Programming with files/guests.txt
 **/*.cpython-39..pyc
 **/*.cpython-310.pyc
-**/checkpoint*
+**/.ipynb_checkpoints
