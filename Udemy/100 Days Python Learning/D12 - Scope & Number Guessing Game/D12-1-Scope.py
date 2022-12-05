@@ -23,5 +23,3 @@ def hp_potion():
     print(player_health+potion_strength) #7 tetap akan bisa memanggil value dari luar dan dari dalam fungsi
 hp_potion()
 print(player_health) #6 akan memanggil no.5 karena berada di luar fungsi & tidak akan terjadi error (global scope)
-
-#test git push user name
