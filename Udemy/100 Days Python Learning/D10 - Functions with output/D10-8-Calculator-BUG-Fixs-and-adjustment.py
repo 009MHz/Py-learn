@@ -1,5 +1,9 @@
 # MISSION: BUGFIX and improvement
-from replit import clear
+import os
+def cls():
+    """Clearing VS Code previous logs"""
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 # calculator function
 def add(n1, n2):
@@ -31,10 +35,11 @@ def calculator():
         calculation_function = operations[operation_symbol]
         answer = calculation_function(num1,num2)
         print(f"{num1} {operation_symbol} {num2} = {answer}")
-        proceed = input(f'"Type "y" to continue calculate with {answer}, type "n" to exit\n') 
+        proceed = input(f'Last output: {answer}\ntype "y" to continue using calculator type "n" to restart\n').lower()
         if proceed == "y": 
             num1 = answer 
         else:
-            calculation = False 
+            calculation = False
+            cls() 
             calculator() 
 calculator() 
