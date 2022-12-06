@@ -4,14 +4,14 @@ import random
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
-"""function ambil kartu"""
 def deal_cards():
+    """function ambil kartu"""
     draw = random.choice(cards)
     return draw
 
 
-"""function CEK BLACKJACK"""
 def score(cards):
+    """function CEK BLACKJACK"""
     if sum(cards) == 21 and len(cards) == 2:
         return 0
     # ACE REPLACEMENT
@@ -22,9 +22,9 @@ def score(cards):
 
 
 def play_game():
+    """randoming 2 cards for both player"""
     user_card = []
     bot_card = []
-    """randoming 2 cards for both player"""
     for x in range(2):
         user_card.append(deal_cards())
         bot_card.append(deal_cards())
