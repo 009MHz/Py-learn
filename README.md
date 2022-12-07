@@ -1,2 +1,2 @@
 # python-learning
-Re-writing &amp; applying course's theory
+### Re-writing &amp; applying course's theory
