@@ -1,7 +1,7 @@
 question_data = [
 
     {
-        "question": "The song 'Megalovania' by Toby Fox made its third appearence in the 2015 RPG 'Undertale'.",
+        "question": "The song 'Megalovania' by Toby Fox made its third appearance in the 2015 RPG 'Undertale'.",
         "correct_answer": "True", "incorrect_answers": ["False"]},
     {
         "question": "The game 'Battlefield 1' takes place during World War I.",
@@ -31,3 +31,5 @@ question_data = [
         "question": "The game 'Jetpack Joyride' was created by 'Redbrick Studios'.",
         "correct_answer": "False", "incorrect_answers": ["True"]}
 ]
+
+# Trivia databases: https://opentdb.com/api_config.php

@@ -1,5 +1,5 @@
 class Brain:
-    """Main Quiz Flow"""
+    """Main Quiz Flow & Mechanism"""
 
     def __init__(self, q_list):
         self.question_number = 0

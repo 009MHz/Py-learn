@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="247cdd06-b3bf-4f09-86de-549aa89b3b08" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D17 - OOP Benefits &amp; Quiz Project/Quiz Project/Quiz_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D17 - OOP Benefits &amp; Quiz Project/Quiz Project/Quiz_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D17 - OOP Benefits &amp; Quiz Project/Quiz Project/Quiz_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D17 - OOP Benefits &amp; Quiz Project/Quiz Project/Quiz_flow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D17 - OOP Benefits &amp; Quiz Project/Quiz Project/Quiz_games.py" beforeDir="false" afterPath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D17 - OOP Benefits &amp; Quiz Project/Quiz Project/Quiz_games.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D17 - OOP Benefits &amp; Quiz Project/Quiz_games.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670432265590</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Quiz_flow Brain fixing">
+      <created>1670433075884</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670433075884</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +169,7 @@
     <MESSAGE value="Quiz Project Updated" />
     <MESSAGE value="Excluding .idea directory" />
     <MESSAGE value="project handling - cheat mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="project handling - cheat mode" />
+    <MESSAGE value="Quiz_flow Brain fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quiz_flow Brain fixing" />
   </component>
 </project>
