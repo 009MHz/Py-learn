@@ -14,7 +14,7 @@ class Brain:
         while not self.proceed():
             current = self.question_list[self.question_number]
             user_answer = input(f"Q.{self.question_number + 1}: {current.text} (True/False) ")
-            self.answer_check(user_answer, answer_text)
+            self.answer_check(user_answer, current.answer)
             self.question_number += 1
 
     def answer_check(self, user_answer, correct_answer):

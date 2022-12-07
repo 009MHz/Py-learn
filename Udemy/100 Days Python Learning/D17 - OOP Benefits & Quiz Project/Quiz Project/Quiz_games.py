@@ -2,7 +2,7 @@ from Quiz_data import question_data
 from Quiz_flow import Brain
 
 class Question:
-    """Data List converter to Class object"""
+    """Data List converter to CLass object"""
     def __init__(self, q_text, q_answer):
         self.text = q_text
         self.answer = q_answer
