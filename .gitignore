@@ -5,3 +5,4 @@ Coursera/Google IT Automation with Python Specialization/2 - Python to Interact 
 **/*.cpython-310.pyc
 **/.ipynb_checkpoints
 **/workspace.xml
+/.idea/
