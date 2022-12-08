@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247cdd06-b3bf-4f09-86de-549aa89b3b08" name="Changes" comment="Updating README.md and adding PyCharm component">
-      <change afterPath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D18 - Turtle &amp; GUI/D18 - 01 Turtle Start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="247cdd06-b3bf-4f09-86de-549aa89b3b08" name="Changes" comment="turtle start" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,12 +42,12 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Rainbow Brackets"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Rainbow Brackets&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Docs\Python\PyCharm\Udemy\100 Days Python Learning\D17 - OOP Benefits &amp; Quiz Project\Quiz Project" />
@@ -134,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670449267243</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="turtle start">
+      <created>1670518275452</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670518275452</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +163,7 @@
     <MESSAGE value="project handling - cheat mode" />
     <MESSAGE value="Quiz_flow Brain fixing" />
     <MESSAGE value="Updating README.md and adding PyCharm component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating README.md and adding PyCharm component" />
+    <MESSAGE value="turtle start" />
+    <option name="LAST_COMMIT_MESSAGE" value="turtle start" />
   </component>
 </project>
