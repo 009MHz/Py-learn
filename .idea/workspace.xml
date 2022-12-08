@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247cdd06-b3bf-4f09-86de-549aa89b3b08" name="Changes" comment="turtle start" />
+    <list default="true" id="247cdd06-b3bf-4f09-86de-549aa89b3b08" name="Changes" comment="gitignore adding workspace xml">
+      <change afterPath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D18 - Turtle &amp; GUI/D18 - 03 Advance turtle shape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D18 - Turtle &amp; GUI/D18 - 04 Advance turtle random walk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/100 Days Python Learning/D18 - Turtle &amp; GUI/turtle_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670518275452</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="removing notebook">
+      <created>1670520256558</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670520256558</updated>
+    </task>
+    <task id="LOCAL-00012" summary="gitignore adding workspace xml">
+      <created>1670520336931</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670520336931</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +183,8 @@
     <MESSAGE value="Quiz_flow Brain fixing" />
     <MESSAGE value="Updating README.md and adding PyCharm component" />
     <MESSAGE value="turtle start" />
-    <option name="LAST_COMMIT_MESSAGE" value="turtle start" />
+    <MESSAGE value="removing notebook" />
+    <MESSAGE value="gitignore adding workspace xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore adding workspace xml" />
   </component>
 </project>
