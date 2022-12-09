@@ -1,13 +1,14 @@
 from turtle import Turtle, Screen
 import random
-from turtle_colors import colors
 
 leo = Turtle()
 canvas = Screen()
+canvas.colormode(255)  # fixing turtle not displayed using RGB color
 directions = [0, 90, 180, 270]
 distance = random.randint(30, 50)
 leo.pensize(10)
 leo.speed(9)  # 0 : fastest, 1: slowest, 6 : normal, 10: fast
+
 
 def random_color():
     """Applying random RGB value"""
@@ -19,7 +20,7 @@ def random_color():
 
 
 for x in range(150):
-    leo.color(random.choice(colors))
+    leo.pencolor(random_color())
     leo.forward(distance)
     leo.setheading(random.choice(directions))
 
