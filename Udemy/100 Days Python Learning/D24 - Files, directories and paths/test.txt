@@ -1,1 +1,2 @@
-Hi python, thie is the test files for the course
+This text is written from jupyter lab Windows 8, and removing previous text
+This text is added from jupyter lab Windows 8, using append method
