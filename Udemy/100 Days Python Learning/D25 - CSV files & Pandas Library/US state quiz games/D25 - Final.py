@@ -14,13 +14,13 @@ turtle.shape(image)
 # https://cutt.ly/90KesIL
 
 """3. Game Continuation"""
-# 3.1 Define the game condition for looping
+# 3.1 Define the game condition
 correct_answer = []
 while len(correct_answer) != 50:
 
     # 1.3 Define the prompt for user input
     loc_prompt = screen.textinput(title=f"{len(correct_answer)}/50 Answers", prompt="Guess the States").title()
-    print(loc_prompt)
+    # print(loc_prompt)
 
     """2. Check the input vs correct data"""
     # 2.1 read the CSV & convert to python data
@@ -30,13 +30,12 @@ while len(correct_answer) != 50:
     # 2.2 Validate the correct answer
     if loc_prompt in states:  # Showing the result on the map
         correct_answer.append(loc_prompt)
-        print(correct_answer)
+        # print(correct_answer)
         t = turtle.Turtle()
         t.hideturtle()
         t.penup()
         correct = data[data.state == loc_prompt]
         t.goto(int(correct.x), int(correct.y))
-        # t.write(correct.state)  # will be writing CSV pandas reading
         t.color('blue')
         t.write(correct.state.item())
 
