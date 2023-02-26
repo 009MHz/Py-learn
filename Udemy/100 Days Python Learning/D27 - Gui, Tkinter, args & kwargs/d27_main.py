@@ -20,12 +20,11 @@ textbox.pack()
 
 # GUI Click Button
 def hit_click():  # Click action
-    textbox_value = f"Passed text: '{textbox.get()}'"
     if textbox.get() == "Insert your text here.":
-        textbox_value = f"Button Clicked with empty value"
+        new_label_header = f"Button Clicked with empty value"
     else:
-        textbox_value = f"Passed text: '{textbox.get()}'"
-    win_lab.config(text=textbox_value, font=("Century Gothic", 12, "bold"))
+        new_label_header = f"Passed text: '{textbox.get()}'"
+    win_lab.config(text=new_label_header, font=("Century Gothic", 12, "bold"))
 
 
 clk_btn = Button(text="Click Me", command=hit_click)
