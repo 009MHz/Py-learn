@@ -21,7 +21,7 @@ def textbox_interact(event):
 
 # GUI Multiline Text
 def multi_text_interact(event):
-    default_text = "Insert your text here."
+    # default_text = "Insert your text here."
     if multi_text.get("1.0", "1.end") == default_text:
         multi_text.delete("1.0", END)
     elif multi_text.get("1.0", "1.end") == "":
